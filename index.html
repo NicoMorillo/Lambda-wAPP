@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" id="WebAPP">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name='viewport' content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Deploy a form WebAPP with python and Lambda">
+<meta name="author" content="Nicolas M. Morillo Martinez">
+<meta name="keywords" content="Email, First name, Second name, City, Address, Telephone, Title">
+<meta name="robots" content="index, follow">
+
+<title>WebAPP form</title>
+<style>
+	.divtag2{
+		color: red;
+		size: 2px;
+		text-align:  center;
+	}
+</style>
+</head>
+<body style="background-color: peachpuff;">
+<h2 align="center">User Registration</h2>
+	<form action="" method="post">
+		<div class="divtag1">
+			<table style="border:1px solid black;margin-left:auto;margin-right:auto;background-color: skyblue;">
+				<tr>
+					<td><font color="red">*</font>Email: </td>
+					<td><input type="email" name="textEmail" required></td>
+				</tr>
+				<tr>
+					<td><font color="red">*</font>Title: </td>
+					<td><select name="textTitle">
+					<option value= "Mr" selected>Mr</option>
+					<option value= "Ms">Ms</option>
+					<option value= "Miss">Miss</option>	
+					</select></td>
+				</tr>
+				<tr>
+					<td><font color="red">*</font>First Name: </td>
+					<td><input type="text" name="textFirst_name" required></td>
+				</tr>
+				<tr>
+					<td><font color="red">*</font>Last Name: </td>
+					<td><input type="text" name="textLast_name" required></td>
+				</tr>
+				<tr>
+					<td><font color="red">*</font>Address line 1: </td>
+					<td><input type="text" name="textAddress_line1" required></td>
+				</tr>
+				<tr>
+					<td>Address line 2: </td>
+					<td><input type="text" name="textAddress_line2"></td>
+				</tr>
+				<tr>
+					<td>City: </td>
+					<td><input type="text" name="textCity"></td>
+				</tr>
+				<tr>
+					<td><font color="red">*</font>PostCode: </td>
+					<td><input type="text" name="textPostcode" required></td>
+				</tr>
+				<tr>
+					<td>Telephone: </td>
+					<td><input type="number" name="textTelephone"></td>
+				</tr>
+				<tr>
+				<td><input type="hidden" name="textSite" readonly="readonly"
+					value="ElPuerto"></td>
+				<tr>
+					<th colspan="2">
+						<input type="submit" name="btnGrabar" value="Submit"></th>
+				</tr>
+			</table>
+		</div>
+		<div class="divtag2">
+			<p>* Mandatory information </p>
+		</div>
+		</form>
+
+</body>
+</html>
